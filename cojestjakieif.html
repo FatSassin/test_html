@@ -5,24 +5,26 @@
 			<meta charset="utf-8">
 		</head>
 		<body>
+			<a href="lista.html">Powrót do listy</a>
+			<br>
 			<input id="text_a" type="text" />
 			<p id="answer"></p>
 			<button onclick="myFunction()">Check</button>
 
 			<script>
-			function myFunction()
-			{
-			var a=document.getElementById("text_a").value;
+				function myFunction()
+				{
+				var a=document.getElementById("text_a").value;
 
-			if (a=="hello")
-			  {
-			document.getElementById("answer").innerHTML="Correct!";
-			  }
-			else
-			  {
-			document.getElementById("answer").innerHTML="Oops!";
-			  }
-			}
+				if (a=="stefan")
+				  {
+				document.getElementById("answer").innerHTML='<img src="resources/images/stefanbatory.jpg" width="300">';
+				  }
+				else
+				  {
+				document.getElementById("answer").innerHTML="Oops!";
+				  }
+				}
 			</script>
 		</body>
 	</html>
