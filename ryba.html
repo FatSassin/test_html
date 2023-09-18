@@ -6,21 +6,15 @@
 		</head>
 		<body>
 			<a href="lista.html">Powrót do listy</a>
-			<br>
-			
-			<input id="Your_Message" type="text" />
-			
-		
-			<p id="output">...</p>
-		
+			<br>		
+			<input id="Your_Message" type="text" />		
+			<p id="output">...</p>	
 			<script>
 				document.getElementById("Your_Message").onclick = function(){
 					var name = prompt("Type your message");
 					document.getElementById("Your_Message").innerText = name;
-					document.getElementById("output").innerText = name;
-				  
+					document.getElementById("output").innerText = name;		  
 				}
-
 			</script>
 		</body>
 	</html>
