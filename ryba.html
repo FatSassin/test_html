@@ -5,6 +5,7 @@
 			<meta charset="utf-8">
 		</head>
 		<body style="background-color:yellow; 0px;">
+			<audio id='mysound'><source src="resources/audio/DSRADIO.wav"></audio>
 			<p id="date-container"></p>	
 			<img src="resources/images/yay.jpg" width="300" align="right">
 			<a href="lista.html">Powrót do listy</a>
@@ -14,8 +15,7 @@
 			<div id="mypopover" popover> Username Set </div>
 			<br>		
 			<input placeholder="write me" id="yomama"/>
-			<button id="Your_Message" type="text"> wiadomosc </button>
-			<!--<input id="Your_Message" type="text">-->
+			<button id="Your_Message" type="text"> Your Message </button>
 			<p id="output"></p>	
 			<script>
 				setInterval(getCurrentDateAndTime, 10);
@@ -23,14 +23,12 @@
 				  const d = new Date();
 				  document.getElementById("date-container").innerHTML = d.toLocaleTimeString();
 				}
-
 				document.getElementById("Your_Message").onclick = function(){
-					//var name = prompt("Type your message");
-					//document.getElementById("Your_Message").innerText = name;
+					var audio = new Audio('resources/audio/DSRADIO.wav');
+					audio.play();
 					var imie = document.getElementById("name").value;
 					var time = document.getElementById("date-container").innerHTML;
-					//document.getElementById("output").innerHTML += `<h2> ${time}  ${imie} : ${document.getElementById("yomama").value}</h2>`;
-					document.getElementById("output").innerHTML += `<h2> ${time}  ${imie} : ${document.getElementById("yomama").value}</h2>`;						
+					document.getElementById("output").innerHTML += `<sub> ${time} </sub>` + `<h1> ${imie} : ${document.getElementById("yomama").value}</h1>`;					
 				}
 			</script>
 		</body>
