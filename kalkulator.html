@@ -1,19 +1,22 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Kalkulator</title>
-			<meta charset="utf-8">
-		</head>		
-		<body>
-			<a href="lista.html">Powrót do listy</a>
-			<br>
-			<a href="kalk2.html">Dodawanie</a>
-			<br>
-			<a href="kalk3.html">Odejmowanie</a>
-			<br>
-			<a href="kalk4.html">Mnożenie</a>
-			<br>
-			<a href="kalk5.html">Dzielenie</a>
-			<br>
-		</body>
-	</html>
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Create database
+$sql = "CREATE DATABASE myDB";
+if ($conn->query($sql) === TRUE) {
+  echo "Database created successfully";
+} else {
+  echo "Error creating database: " . $conn->error;
+}
+
+$conn->close();
+?>
