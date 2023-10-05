@@ -1,0 +1,4 @@
+ten folder idzie do folderu htdocs w C:\xampp\htdocs musiz miec xampp, odpal Apache i MySQL moronie
+nazwij baze danych "bazadanychhtmltest", tabele "tabela2"
+na strone html do wpisywania danych wchodz linkiem "http://localhost/educativeform/"
+nie zmieniaj żadnych nazw
