@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<meta charset="utf-8">
+<script>
+	function Dodawanie()
+	{
+		var x = parseInt(prompt("Liczba pierwsza", "0"), 10);
+		var y = parseInt(prompt("Liczba druga", "0"), 10);
+		var sum = x+y;
+		document.write("Suma = " + sum); 
+	}
+	function Odejmowanie()
+	{
+		var x = parseInt(prompt("Liczba pierwsza", "0"), 10);
+		var y = parseInt(prompt("Liczba druga", "0"), 10);
+		var sum = x-y;
+		document.write("Suma = " + sum); 
+	}
+	function Mnożenie()
+	{
+		var x = parseInt(prompt("Liczba pierwsza", "0"), 10);
+		var y = parseInt(prompt("Liczba druga", "0"), 10);
+		var sum = x*y;
+		document.write("Suma = " + sum); 
+	}
+	function Dzielenie()
+	{
+		var x = parseInt(prompt("Liczba pierwsza", "0"), 10);
+		var y = parseInt(prompt("Liczba druga", "0"), 10);
+		var sum = x/y;
+		document.write("Suma = " + sum); 
+	}
+</script>
+</head>
+<body>
+	<button onclick="Dodawanie()">Dodawanie</button>
+	<button onclick="Odejmowanie()">Odejmowanie</button>
+	<button onclick="Mnożenie()">Mnożenie</button>
+	<button onclick="Dzielenie()">Dzielenie</button>
+</body>
+</html>

@@ -1,0 +1,7 @@
+9/11/2023
+---------------
+Bazy danych pozwalają na magazynowanie, przeszukiwanie i sortowanie/seGREGowanie danych.
+
+Bazy danych analogowe to np. akta, dokumenty papierowe, fizyczne zapiski danych.
+
+SQL (Structured Query Language) to język strukturalny BAZ DANYCH.

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>HubertCHAN.com</title>
+			<meta charset="utf-8">
+		</head>
+		<body style="background-color:yellow; 0px;">
+			<audio id='mysound'><source src="resources/audio/DSRADIO.wav"></audio>
+			<p id="date-container"></p>	
+			<img src="resources/images/yay.jpg" width="300" align="right">
+			<a href="lista.html">Powrót do listy</a>
+			<br>		
+			<input placeholder="username" id="name"/>
+			<button popovertarget="mypopover" id="username" type="text"> set username </button>
+			<div id="mypopover" popover> Username Set </div>
+			<br>		
+			<input placeholder="write me" id="yomama"/>
+			<button id="Your_Message" type="text"> Your Message </button>
+			<p id="output"></p>	
+			<script>
+				setInterval(getCurrentDateAndTime, 10);
+				function getCurrentDateAndTime() {
+				  const d = new Date();
+				  document.getElementById("date-container").innerHTML = d.toLocaleTimeString();
+				}
+				document.getElementById("Your_Message").onclick = function(){
+					var audio = new Audio('resources/audio/DSRADIO.wav');
+					audio.play();
+					var imie = document.getElementById("name").value;
+					var time = document.getElementById("date-container").innerHTML;
+					document.getElementById("output").innerHTML += `<sub> ${time} </sub>` + `<h1> ${imie} : ${document.getElementById("yomama").value}</h1>`;					
+				}
+			</script>
+		</body>
+	</html>
