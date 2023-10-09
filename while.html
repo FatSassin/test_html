@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Page Title</title>
+			<meta charset="utf-8">
+		</head>
+		<body>
+			<script>
+				function mojaFunkcja() {
+					document.write ("Hello World!");
+				};
+				mojaFunkcja();
+			</script>
+			<br>
+			<script>
+				function mojaFunkcja1(a) {
+					return 2*a+4;
+				};
+				document.write(mojaFunkcja1(5)); //powinna wyświetlić 14
+			</script>
+			<br>
+			<script>
+				function silnia(n)
+				{
+					if(n == 1) return 1;
+					else return n * silnia(n-1);
+				}
+				document.write(silnia(6));
+			</script>
+		</body>
+	</html>
