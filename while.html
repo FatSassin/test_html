@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>Page Title</title>
+			<title>Funkcje i inne</title>
 			<meta charset="utf-8">
 		</head>
 		<body>
+			<!--
 			<script>
 				function mojaFunkcja() {
 					document.write ("Hello World!");
@@ -27,5 +28,16 @@
 				}
 				document.write(silnia(6));
 			</script>
+			<br>
+			-->
+			<script>
+				function f2(){
+					x=document.getElementById("name").value;
+					document.getElementById("a").innerHTML='Username set to: ' + x;
+				}
+			</script>
+			<input type="text" id="name">
+			<input type="button" value="Set Username" onClick="f2()">
+			<h1 id="a">No Username</h1>
 		</body>
 	</html>

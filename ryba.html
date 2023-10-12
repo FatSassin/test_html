@@ -9,11 +9,16 @@
 			<p id="date-container"></p>	
 			<img src="resources/images/yay.jpg" width="300" align="right">
 			<a href="lista.html">Powrót do listy</a>
-			<br>		
-			<input placeholder="username" id="name"/>
-			<button popovertarget="mypopover" id="username" type="text"> set username </button>
-			<div id="mypopover" popover> Username Set </div>
-			<br>		
+			<br>
+			<script>
+				function f2(){
+					name=document.getElementById("x").value;
+					alert("Username set to: " + name);
+				}
+			</script>
+			<input type="text" id="x">
+			<input type="button" value="Set Username" onClick="f2()">	
+			<br>
 			<input placeholder="write me" id="yomama"/>
 			<button id="Your_Message" type="text"> Your Message </button>
 			<p id="output"></p>	
@@ -26,9 +31,8 @@
 				document.getElementById("Your_Message").onclick = function(){
 					var audio = new Audio('resources/audio/DSRADIO.wav');
 					audio.play();
-					var imie = document.getElementById("name").value;
 					var time = document.getElementById("date-container").innerHTML;
-					document.getElementById("output").innerHTML += `<sub> ${time} </sub>` + `<p> ${imie} : ${document.getElementById("yomama").value}</p>`;					
+					document.getElementById("output").innerHTML += `<sub> ${time} </sub>` + `<p> ${name} : ${document.getElementById("yomama").value}</p>`;					
 				}
 			</script>
 		</body>
