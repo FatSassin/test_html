@@ -1,8 +1,24 @@
 h1 {
   text-align: center;
   font-size: 2em;
+  font-family: italic;
+  color: white;
+  margin-bottom: 20px;
+  background: rgba(0,0,0,0.5);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+a {
+  text-align: center;
+  font-family: italic;
   color: black;
   margin-bottom: 20px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 4px solid #000;
 }
 
 table {
@@ -80,3 +96,52 @@ section {
   margin: 4px 2px;
   border-radius: 7px;
 }
+.over {
+	font-family: Arial;
+	padding: 50px;
+	text-align: center;
+	background: url("resources/images/desen4.jpg");
+	font-size: 30px;
+	height: 200px;
+	width: 100%;
+}
+.soup {
+	font-family: Arial;
+	padding: 50px;
+	text-align: center;
+	background: rgba(255,255,165,1);
+	font-size: 30px;
+	height: 50px;
+	width: 100%;
+}
+.awe {
+	padding: 50px;
+	text-align: center;
+	background: rgba(172,202,202,1);
+	font-size: 30px;
+	height: 300px;
+	width: 80%;
+	margin:0px auto;	
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+.fontchange:hover {
+  font-family: Arial;
+}
+.kolor:hover {
+  background: red;
+}
+
+.owo {
+	padding: 50px;
+	text-align: center;
+	background: rgba(255,255,165,1);
+	font-size: 20px;
+	height: 50px;
+	width: 100%;
+	margin:0px auto;
+	font-style: italic;
+    font-weight: bold;
+}
+ 
