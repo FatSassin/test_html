@@ -5,6 +5,7 @@
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
         $email = $_POST['email'];
+		$passwd = $_POST['passwd'];
     }
 
     // database details
@@ -23,7 +24,7 @@
     }
 
     // using sql to create a data entry query
-    $sql = "INSERT INTO tabela2 (id, fname, lname, email) VALUES ('0', '$fname', '$lname', '$email')";
+    $sql = "INSERT INTO tabela2 (id, fname, lname, email, passwd) VALUES ('0', '$fname', '$lname', '$email', '$passwd')";
   
     // send query to the database to add values and confirm if successful
     $rs = mysqli_query($con, $sql);
