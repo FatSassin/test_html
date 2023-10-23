@@ -5,39 +5,12 @@
 			<meta charset="utf-8">
 		</head>
 		<body>
-			<!--
 			<script>
-				function mojaFunkcja() {
-					document.write ("Hello World!");
-				};
-				mojaFunkcja();
+				var Tablica = new Array('Marcin','Ania','Agnieszka','Piotrek','Grześ','Magda'); 
+				for (x=0; x<Tablica.length; x++) 
+					{ 
+					document.write(Tablica[x] + "<br>");
+					}
 			</script>
-			<br>
-			<script>
-				function mojaFunkcja1(a) {
-					return 2*a+4;
-				};
-				document.write(mojaFunkcja1(5)); //powinna wyświetlić 14
-			</script>
-			<br>
-			<script>
-				function silnia(n)
-				{
-					if(n == 1) return 1;
-					else return n * silnia(n-1);
-				}
-				document.write(silnia(6));
-			</script>
-			<br>
-			-->
-			<script>
-				function f2(){
-					x=document.getElementById("name").value;
-					document.getElementById("a").innerHTML='Username set to: ' + x;
-				}
-			</script>
-			<input type="text" id="name">
-			<input type="button" value="Set Username" onClick="f2()">
-			<h1 id="a">No Username</h1>
 		</body>
 	</html>
