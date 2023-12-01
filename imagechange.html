@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>image</title>
+			<meta charset="utf-8">
+			<script>
+				function changeImage() {
+				console.log(document.getElementById("imgClickAndChange").src);
+				let img1 = "resources/images/walesa.webp";
+				let img2 = "resources/images/rapture.jpg";
+					if (imgClickAndChange.classList.contains('class1');)
+					{
+						document.getElementById("imgClickAndChange").src = img1;
+						document.getElementById("imgClickAndChange").classList.add("class1");
+					} 
+					else 
+					{
+						document.getElementById("imgClickAndChange").src = img2;
+						document.getElementById("imgClickAndChange").classList.remove("class1");
+					}
+				}
+			</script>
+		</head>
+		<body>
+			<img alt="" src="resources/images/walesa.webp" style="height: 85px; width: 198px" id="imgClickAndChange" onclick="changeImage()"/>
+		</body>
