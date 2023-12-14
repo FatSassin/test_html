@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>cyferki</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<input type="number" id="artm" name="artmetyczny"/>
+		<input type="number" id="artm2" name="różnica"/>
+			<script>
+				function pupa()
+				{
+					var x = parseInt(document.getElementById("artm").value);
+					var r = parseInt(document.getElementById("artm2").value);
+					var sum = x+r+r+r+r;
+					document.write("Suma = " + sum); 
+					const times = 5;
+					for(let i = 0; i < times; i++)
+					{
+					text += "The number is " + i + "<br>";
+					}
+				}
+			</script>
+			<button onclick="pupa()" value="pupa">Artmetyczn</button>
+	</body>
+</html>

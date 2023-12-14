@@ -1,22 +1,15 @@
-<?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-// Create database
-$sql = "CREATE DATABASE myDB";
-if ($conn->query($sql) === TRUE) {
-  echo "Database created successfully";
-} else {
-  echo "Error creating database: " . $conn->error;
-}
-
-$conn->close();
-?>
+<!DOCTYPE html>
+	<html>
+		<body>
+			<h2>JavaScript For Loop</h2>
+			<p id="demo"></p>
+			<script>
+				let text = "";
+				const times = 5;
+				for(let i = 0; i < times; i++){
+					text += "The number is " + i + "<br>";
+				}
+				document.getElementById("demo").innerHTML = text;
+			</script>
+		</body>
+	</html>
