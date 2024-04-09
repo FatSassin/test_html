@@ -1,6 +1,7 @@
-body{
-    background-color: black;  
-	margin: 0;
+body{ 
+	text-align: center;
+	background-color: red;
+	color: green;
 }
 
 header {
@@ -22,4 +23,49 @@ footer {
 	background-color: red;
 	width: 100%;
 	margin: auto;
+}
+@keyframes example {
+	0%   {background-color: red;}
+	25%  {background-color: yellow;}
+	50%  {background-color: blue;}
+	75%	 {background-color: blueviolet;}
+	100% {background-color: green;}
+}
+div {
+	animation-name: example;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+.right_header {
+	animation: rotation 2s infinite linear;
+	position: relative;
+	float: right;
+	right: 100px;
+	top: 100px;
+	border: 3px solid #73AD21;
+}
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+}
+@keyframes rotationL {
+	from {
+	  transform: rotate(359deg);
+	}
+	to {
+	  transform: rotate(0deg);
+	}
+}
+.left_header {
+	animation: rotationL 2s infinite linear;
+	position: relative;
+	float: left;
+	left: 100px;
+	top: 100px;
+	border: 3px solid #73AD21;
 }
